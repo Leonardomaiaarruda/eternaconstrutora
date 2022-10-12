@@ -1,0 +1,233 @@
+body{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .0);
+    z-index: 1;
+}
+
+#img-principal{    
+    background-image: url("../img/casa.png");
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc;
+    background-size: cover;
+    position:relative;
+    z-index: 99;
+}
+
+
+
+header{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 80%, 20%;
+    z-index: 2;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 999;
+}
+#menu{
+    display: none;
+}
+#menu-nav{
+    display:block;
+}
+
+header nav{
+    margin-top: 20px;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left:20px;
+}
+header li a.background{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+header li a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    color:rgb(209, 206, 206);
+
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:600;
+}
+
+header span{
+    margin-left: 10px;
+}
+
+header h2{
+    font-size: 60px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(212, 212, 212);
+    padding: 10px;
+    margin-top:0px;
+
+    right: 30%;
+    position: absolute;
+    z-index: 999;
+}
+header span{
+    color:rgb(219, 218, 218);
+}
+
+main{
+    width: 100%;
+    z-index: 10;
+}
+
+#nossaHistoria{
+    width: 100%;
+    height: 98vh;
+    position:relative;
+}
+
+#widthHistory{
+    width: 80%;
+    position:absolute;
+    margin-left: 10px;
+    margin-top: 90px;
+}
+
+#widthHistory h2{
+    text-decoration:underline;
+    color:rgb(65, 65, 65);
+
+}
+
+#widthHistory p{
+    padding:20px;
+
+}
+
+#image-socios{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.image-center{
+    max-width: 200px;
+    max-height:200px;
+    padding:2px;
+    background-color: rgb(121, 121, 121);
+}
+
+.image-center img{
+    width: 100%;
+}
+
+
+.fconosco-center{
+    text-align: center;
+}
+
+#fc-img img{
+    width:300px;
+}
+
+
+
+@media (max-width:1138px){
+    header nav ul li{
+        font-size: 18px;
+    }
+
+    header span{
+        display: none;
+    }
+
+    header h2{
+        right: 20%;
+    }
+}
+
+
+@media (max-width:1024px){
+
+    header nav ul li{
+        font-size: 15px;
+    }
+
+    header h2{
+        right:10%;
+        font-size:40px;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width:768px){
+    #widthHistory{
+        width: 95%;
+    }
+
+    #image-socios{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-center{
+        max-width:100%;
+        max-height:100%;
+        padding: 5px;
+    }
+
+    #fale-conosco{
+        margin-top:calc(100vh + 100px);
+    }
+    #menu{
+        display: block;
+        width: 40px;
+        height:40px;
+        background-color: rgb(252, 252, 252);
+        margin: 10px 10px;
+
+        position: absolute;
+    }   
+    
+    header{
+        height: 60px;
+    }
+    header h2{  
+        font-size: 25px;   
+    }
+    header nav{
+        width: 50%;
+        margin-top: 60px;
+        background-color:rgba(0, 0, 0, 0.9);
+    }
+    header nav ul li{
+        display: block;
+        position: relative;
+        margin-left: -20px;
+        margin-top: 30px;
+    }
+    
+    #menu-nav{
+        display: none;
+    }
+    
+}
+
+
+@media (max-width:425px){
+    #image-socios{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #fale-conosco{
+        margin-top:calc(100vh + 100vh + 100vh);
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Eterna Construtora</title>
+</head>
+<body>
+    
+   <section id="img-principal">
+        <div id="wrapper">
+            <header>
+                <div id="menu"></div>
+                <nav id="menu-nav">
+                    <ul>
+                        <li><a href="#img-principal" class="background">ETERNA</a></li> <span>|</span>
+                        <li><a href="#nossaHistoria">NOSSA HISTÓRIA</a></li> <span>|</span>
+                        <li><a href="#fale-conosco">FALE CONOSCO</a></li>
+                    </ul>
+                </nav>
+        
+                    <h2>ETERNA</h2>
+            </header>
+        </div>
+   </section>
+
+
+   <main>            
+        <section id="nossaHistoria">
+            <div id="widthHistory">
+                <h2>NOSSA HISTÓRIA</h2>
+                <div id="image-socios">
+                    <div class="image-center"><img src="./img/d.png" alt=""></div>
+                    <div class="image-center"><img src="./img/m.png" alt=""></div>
+                    <div class="image-center"><img src="./img/a.png" alt=""></div>
+                    <div class="image-center"><img src="./img/j.png" alt=""></div>
+                </div>
+                <p>
+                    Aqui sera contado quem é a eterna e seus socios Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto
+                     fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e 
+                     embaralhou-a para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas cinco séculos, mas também o 
+                     salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com
+                      o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração
+                       eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="fale-conosco">
+            <div class="fconosco-center">
+                <h1>FALE CONOSCO</h1>
+                <p>Iremos tirar todas suas duvidas.</p>
+                <span>Clique Aqui para falar conosco</span>
+                <div id="fc-img"><img src="./img/whats.png" alt="Fale conosco"></div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
