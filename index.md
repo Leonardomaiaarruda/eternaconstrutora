@@ -15,19 +15,20 @@
                 <div id="menu"></div>
                 <nav id="menu-nav">
                     <ul>
-                        <li><a href="#img-principal" class="background">ETERNA</a></li> <span>|</span>
-                        <li><a href="#nossaHistoria">NOSSA HISTÓRIA</a></li> <span>|</span>
+                        <li class="background"><a href="#img-principal">ETERNA</a></li> <span>|</span>
+                        <li><a href="#main">NOSSA HISTÓRIA</a></li> <span>|</span>
                         <li><a href="#fale-conosco">FALE CONOSCO</a></li>
                     </ul>
                 </nav>
         
-                    <h2>ETERNA</h2>
+                <h2>ETERNA</h2>
             </header>
         </div>
    </section>
 
 
-   <main>            
+   <main id="main">      
+    <div id="vazia"></div>      
         <section id="nossaHistoria">
             <div id="widthHistory">
                 <h2>NOSSA HISTÓRIA</h2>
@@ -37,6 +38,7 @@
                     <div class="image-center"><img src="./img/a.png" alt=""></div>
                     <div class="image-center"><img src="./img/j.png" alt=""></div>
                 </div>
+
                 <p>
                     Aqui sera contado quem é a eterna e seus socios Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto
                      fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e 
@@ -51,7 +53,7 @@
 
         <section id="fale-conosco">
             <div class="fconosco-center">
-                <h1>FALE CONOSCO</h1>
+                <h1>FALE CONOSCO POR MEU DO WHATSAPP</h1>
                 <p>Iremos tirar todas suas duvidas.</p>
                 <span>Clique Aqui para falar conosco</span>
                 <div id="fc-img"><img src="./img/whats.png" alt="Fale conosco"></div>
