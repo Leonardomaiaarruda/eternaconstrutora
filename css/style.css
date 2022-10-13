@@ -209,7 +209,7 @@ main{
 
     
     #menu-nav{
-        display: block;
+        display: none;
     }
 
     header li a{

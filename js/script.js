@@ -17,6 +17,5 @@ a.forEach( (e)=>{
     e.addEventListener('click', (select)=>{
         document.querySelector(".background").classList.remove('background');
         e.classList.add('background')
-        console.log(e)
     });
 });
