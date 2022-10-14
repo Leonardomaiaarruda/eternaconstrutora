@@ -192,25 +192,23 @@ main{
     }
     header nav{
         width: 100%;
+        position: absolute;
         margin-top: 55px;
         background-color:black;   
         text-align: center;
+        margin-left: -100%;
+
+        transition: all .8s;
     }
 
-   
     header nav ul li{
-        width: 100;
         display: block;
         position: relative;
-        border-top: 1px solid silver;
+        border-top: 1px solid rgb(255, 255, 255);
         padding:8px;
         margin-left: -40px;
     }
-
-    
-    #menu-nav{
-        display: none;
-    }
+   
 
     header li a{
         color: rgb(252, 252, 252);
@@ -219,9 +217,23 @@ main{
     header li.background{
         background-color:transparent;
         color: rgb(255, 255, 255);
-        background-color: silver;
+    }    
+
+  header .p-menu{
+    color:rgb(241, 241, 241);
+    margin:28px 58px;
+  }
+
+  #menu{
+    display: block;
+    margin: 10px -5px;
+    position: absolute;
+    }   
+
+    #menu img{
+        width: 60;
+        height: 40px;
     }
-  
 
     #widthHistory{
         width: 95%;
@@ -240,15 +252,6 @@ main{
     #fale-conosco{
         margin-top:calc(100vh + 100px);
     }
-    #menu{
-        display: block;
-        width: 40px;
-        height:40px;
-        background-color: rgb(252, 252, 252);
-        margin: 10px 10px;
-
-        position: absolute;
-    }   
        
 }
 
