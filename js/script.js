@@ -4,7 +4,7 @@ class Eterna{
       setTimeout(()=>{        
         this.abertura()
         this.slide()
-      }, 1000)
+      }, 2500)
       setTimeout(()=>{
         document.querySelector("#wrapper-arrow").style.display = 'block';
       }, 8000)

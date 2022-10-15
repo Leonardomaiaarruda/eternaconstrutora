@@ -337,6 +337,19 @@ main{
     }
 
     #fale-conosco{
+        margin-top:calc(100vh + 100vh + 110vh);
+    }
+}
+
+
+@media (max-width:375px){
+    #fale-conosco{
         margin-top:calc(100vh + 100vh + 100vh);
+    }
+}
+
+@media (max-width:320px){
+    #fale-conosco{
+        margin-top:calc(100vh + 100vh + 65vh);
     }
 }
