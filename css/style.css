@@ -4,8 +4,31 @@ body{
     box-sizing: border-box;
     background-color: transparent;
     background-image:  linear-gradient( to right, silver, transparent, rgb(109, 108, 108) );
+    font-family: 'Roboto', sans-serif;
 }
 
+#init-start{
+    width:100%;
+    height:100vh;
+
+    position: absolute;
+    background-image: linear-gradient(to bottom right, rgb(184, 184, 184), rgb(103, 181, 201));
+    z-index: 999;
+}
+
+#init-start #center{
+    width: 90%;
+    position: absolute;
+    color:white;
+    font-size: 1.5rem;
+    text-align:start;
+    top: 40%;
+    left:40%;
+    transform: translate(-40%, -40%);
+}
+#center h2 span{
+    color:rgb(128, 128, 128);
+}
 #wrapper{
     width: 100%;
     height: 100vh;
@@ -146,9 +169,48 @@ main{
 
 #fc-img img{
     width:300px;
+    cursor: pointer
+}
+#whats-plantao{
+    width:100%;
+    height:40px;
+    background-color: rgb(0, 243, 81);
+    position: fixed;
+    bottom:0px;
+    cursor: pointer
+}
+
+#wrapper-arrow{
+    position: absolute;
+    display: none;
+}
+
+#arrow img{
+    width: 50px;
+    height:50px;
+    
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
 }
 
 
+@keyframes size {
+    0%   {font-size:20px;}
+    50%  {font-size:15px; color:rgb(235, 231, 231);}
+    100%  {font-size:20px;}
+    
+  
+  }
+
+#whats-plantao h2{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    animation: size 2s linear infinite;
+    cursor: pointer;
+}
 
 @media (max-width:1138px){
     header nav ul li{
@@ -193,10 +255,11 @@ main{
     header nav{
         width: 100%;
         position: absolute;
-        margin-top: 45px;
+        margin-top: 44px;
         text-align: center;
         margin-left: -100%;
         height: 0px;
+        display: none;
         
         transition: all .8s;
     }
