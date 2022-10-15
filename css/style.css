@@ -36,13 +36,14 @@ body{
     z-index: 1;
 }
 
-#img-principal{    
+#img-principal {    
     background-image: url("../img/casa.png");
     background-repeat: no-repeat, repeat;
     background-color: #cccccc;
     background-size: cover;
     position:relative;
     z-index: 99;
+    transition: all 1s;
 }
 
 
@@ -155,7 +156,11 @@ main{
     padding:20px;
 }
 
-
+#nossaHistoria span{
+    font-size: 30px;
+    font-weight:600;
+    text-decoration: underline;
+}
 
 #fale-conosco{
     position:relative;    
@@ -180,20 +185,6 @@ main{
     cursor: pointer
 }
 
-#wrapper-arrow{
-    position: absolute;
-    display: none;
-}
-
-#arrow img{
-    width: 50px;
-    height:50px;
-    
-    position: fixed;
-    right: 10px;
-    bottom: 50px;
-}
-
 
 @keyframes size {
     0%   {font-size:20px;}
@@ -207,9 +198,24 @@ main{
     color:white;
     text-align: center;
     font-size: 20px;
-    margin-top: 5px;
+    margin-top: 8px;
     animation: size 2s linear infinite;
     cursor: pointer;
+}
+
+
+#wrapper-arrow{
+    position: absolute;
+    display: none;
+}
+
+#arrow img{
+    width: 50px;
+    height:50px;
+    
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
 }
 
 @media (max-width:1138px){
@@ -280,6 +286,8 @@ main{
     header li a{
         color: rgb(255, 255, 255);
         padding:8px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
     header li.background{
         background-color:rgb(141, 141, 141);

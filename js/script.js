@@ -3,7 +3,8 @@ class Eterna{
     go(){
       setTimeout(()=>{        
         this.abertura()
-      }, 3000)
+        this.slide()
+      }, 1000)
       setTimeout(()=>{
         document.querySelector("#wrapper-arrow").style.display = 'block';
       }, 8000)
@@ -14,14 +15,32 @@ class Eterna{
       this.abrirWhats()
     };
 
-    
+    slide(){
+  
+      setInterval(()=>{
+      document.querySelector("#img-principal").style.backgroundImage = "url('./img/casa2.png')";
+      },3000)
+
+
+      setInterval(()=>{
+        document.querySelector("#img-principal").style.backgroundImage = "url('./img/casa3.png')";
+        
+       },6000)
+
+       setInterval(()=>{
+        document.querySelector("#img-principal").style.backgroundImage = "url('./img/casa.png')";
+        
+       },9000)
+
+    }
+
     menu(){
       let menuli = document.querySelectorAll("li");
 
       menuli.forEach((e)=>{
         e.addEventListener('click', ()=>{
           document.querySelector(".background").classList.remove('background');
-          e.classList.add('background')
+          e.classList.add('background')            
         });
       });
 
