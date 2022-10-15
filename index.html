@@ -5,6 +5,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+    <meta name = "description" content = "Eterna Construtora, construimos e reformamos">
+    <meta name = "robôs" content = "index, nofollow">
+    <meta name="author" content="Eterna construtora">
+    <meta name="keywords" content="construção, construção civil, reforma, maringá">
+    <meta>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
