@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href=".//img/ƎTERNA.png" type="image/x-icon">
     <title>Eterna Construtora</title>
 </head>
 <body>
-    
+
+    <section id="init-start">
+        <div id="center">
+            <h2>Seja bem vindo a Construtora <span>ƎTERNA</span></h2>
+            <p>Nosso proposito é fazer seu sonho da casa própria se tornar realidade</p>
+        </div>
+    </section>
+
    <section id="img-principal">
         <div id="wrapper">
             <header>
-                <div id="menu"></div>
+                <div id="menu"><img src="" alt=""></div>
+                <p class="p-menu">Menu</p>
                 <nav id="menu-nav">
                     <ul>
-                        <li class="background"><a href="#img-principal">ETERNA</a></li> <span>|</span>
+                        <li class="background li1"><a href="#img-principal">ETERNA</a></li> <span>|</span>
                         <li><a href="#main">NOSSA HISTÓRIA</a></li> <span>|</span>
                         <li><a href="#fale-conosco">FALE CONOSCO</a></li>
                     </ul>
                 </nav>
         
-                <h2>ETERNA</h2>
+                <h2>ƎTERNA</h2>
             </header>
         </div>
-   </section>
+    <section id="whats-plantao"><h2>Entrar em contato</h2></section>
+    <section id="wrapper-arrow"><div id="arrow"><a href="#img-principal"><img src="./img/top.png" alt=""></a></div></section>
+</section>
 
 
    <main id="main">      
@@ -40,12 +55,16 @@
                 </div>
 
                 <p>
-                    Aqui sera contado quem é a eterna e seus socios Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto
-                     fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e 
-                     embaralhou-a para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas cinco séculos, mas também o 
-                     salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com
-                      o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração
-                       eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                    A eterna é composta por cinco membros, de diferentes áreas de conhecimento e distintas experiências profissionais 
+                    que se conectaram no ano de 2021 em um contexto de pós pandemia onde em conversas informais sempre questionavam as
+                    novas necessidades do indivíduo em relação à moradia.
+                </p>
+
+                <p>
+                    <span>Missão</span><br><br>
+                    Nossa missão é construir uma marca que leva qualidade em moradia para todas as pessoas. 
+                    Seja através de casas populares ou imóveis de alto padrão entregando sempre qualidade e inovação para todos
+                    os nossos clientes.
                 </p>
             </div>
         </section>
@@ -53,14 +72,12 @@
 
         <section id="fale-conosco">
             <div class="fconosco-center">
-                <h1>FALE CONOSCO POR MEU DO WHATSAPP</h1>
-                <p>Iremos tirar todas suas duvidas.</p>
+                <h1>FALE CONOSCO PELO WHATSAPP</h1>
+                <p>Iremos tirar todas as suas duvidas.</p>
                 <span>Clique Aqui para falar conosco</span>
-                <div id="fc-img"><img src="./img/whats.png" alt="Fale conosco"></div>
+               <div id="fc-img"><img src="./img/whats.png" alt="Fale conosco"></div>
             </div>
         </section>
-
-
 
     </main>
 
