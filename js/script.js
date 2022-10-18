@@ -1,22 +1,27 @@
 
 class Eterna{
     go(){
-      setTimeout(()=>{        
-        this.abertura()
-        this.slide()
-      }, 2500)
-      setTimeout(()=>{
-        document.querySelector("#wrapper-arrow").style.display = 'block';
-      }, 8000)
-
+      this.redi()
+      this.abertura()
       this.menu()
+      this.slide()
       this.scroll()
       this.arrow()
       this.abrirWhats()
     };
 
+
+    abertura(){
+      setInterval(()=>{
+         document.getElementById('primeiraTela').style.display = 'none';
+         document.getElementById('main').style.display = 'block';
+         document.getElementById("wrapper-arrow").style.display = 'block';
+       }, 2500);
+    }
+   
+
+
     slide(){
-  
       setInterval(()=>{
       document.querySelector("#img-principal").style.backgroundImage = "url('./img/casa2.png')";
       },3000)
@@ -31,7 +36,6 @@ class Eterna{
         document.querySelector("#img-principal").style.backgroundImage = "url('./img/casa.png')";
         
        },9000)
-
     }
 
     menu(){
@@ -46,26 +50,24 @@ class Eterna{
 
 
       var menuImg = document.querySelector("#menu img").src = './img/menu-aberto.png' ;
-
       document.getElementById('menu').addEventListener('click', ()=>{
-        let menu = document.getElementById('menu-nav')
+          let menu = document.getElementById('menu-nav')
 
-        if(menu.style.marginLeft == '0%'){
-            menuImg = document.querySelector("#menu img").src = './img/menu-aberto.png';
-            menuImg =  document.querySelector("#menu img").style.marginLeft = '5px';
-            document.querySelector("header nav").style.marginLeft= '-100%';
-        }else{
-            menuImg =  document.querySelector("#menu img").src = './img/menu-fechado.png';
-            menuImg =  document.querySelector("#menu img").style.marginLeft = '20px';
-            document.querySelector("header nav").style.marginLeft= '0%';
-            document.querySelector("header nav").style.display = 'block'
-        };
+          if(menu.style.marginLeft == '0%'){
+              menuImg = document.querySelector("#menu img").src = './img/menu-aberto.png';
+              menuImg =  document.querySelector("#menu img").style.marginLeft = '5px';
+              document.querySelector("header nav").style.marginLeft= '-100%';
+          }else{
+              menuImg =  document.querySelector("#menu img").src = './img/menu-fechado.png';
+              menuImg =  document.querySelector("#menu img").style.marginLeft = '20px';
+              document.querySelector("header nav").style.marginLeft= '0%';
+              document.querySelector("header nav").style.display = 'block'
+          };
       });
     };
 
-  abertura(){
-    document.getElementById('init-start').style.display = 'none';
-  }
+ 
+
 
   abrirWhats(){
     document.querySelector("#fc-img img").addEventListener('click', ()=>{
@@ -154,8 +156,8 @@ scroll(){
       }, 1000 / 60); // 60 fps
   };
 }
+
     arrow(){
-      
       const menuItems = document.querySelectorAll('#arrow a[href^="#"]');
 
       function getScrollTopByHref(element) {
@@ -180,9 +182,23 @@ scroll(){
       menuItems.forEach(item => {
         item.addEventListener('click', scrollToIdOnClick);
       });
+    }  
 
-    }
+
+    redi(){
+      let httpLocal = 'http://127.0.0.1:5500/';
+      let http = 'http://eternaconstrutora.epizy.com';  
+      let https = 'https://eternaconstrutora.epizy.com';
+      let body = document.createElement("body");
+
+     
+     
+      if(window.location == http){
+        window.location = https;
+      }
+  }
 };
+
 
 
 

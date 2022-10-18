@@ -7,16 +7,17 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-#init-start{
+#primeiraTela{
     width:100%;
     height:100vh;
 
     position: absolute;
     background-image: linear-gradient(to bottom right, rgb(184, 184, 184), rgb(103, 181, 201));
     z-index: 999;
+    display: block;
 }
 
-#init-start #center{
+#primeiraTela #center{
     width: 90%;
     position: absolute;
     color:white;
@@ -109,6 +110,7 @@ header span{
 main{
     width: 100%;
     z-index: 10;
+    display:none;
 }
 
 
