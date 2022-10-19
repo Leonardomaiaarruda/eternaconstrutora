@@ -42,7 +42,7 @@ body{
     background-repeat: no-repeat, repeat;
     background-color: #cccccc;
     background-size: cover;
-    position:absolute;
+    position:relative;
     z-index: 88;
     transition: all 1s;
 }
@@ -109,7 +109,9 @@ header span{
 
 #main{
     width: 100%;
+    height: 100%;
     z-index: 10;
+    display: none;
 }
 
 
@@ -120,7 +122,6 @@ header span{
 }
 #nossaHistoria{
     width: 100%;
-    height: 80vh;
     position:relative;
 }
 
@@ -150,6 +151,7 @@ header span{
 
 .image-center img{
     width: 100%;
+    height: 100%;
 }
 
 
@@ -164,8 +166,10 @@ header span{
 }
 
 #fale-conosco{
+    width: 100%;
+    height: 100%;
     position:relative;    
-    padding:10px;
+    padding-top:10px;
 
 }
 
@@ -300,6 +304,7 @@ header span{
     margin:28px 58px;
   }
 
+ 
   #menu{
     display: block;
     margin: 10px -5px;
@@ -325,9 +330,7 @@ header span{
         padding: 5px;
     }
 
-    #fale-conosco{
-        margin-top:calc(100vh + 100px);
-    }
+  
        
 }
 
@@ -335,22 +338,5 @@ header span{
 @media (max-width:425px){
     #image-socios{
         grid-template-columns: repeat(1, 1fr);
-    }
-
-    #fale-conosco{
-        margin-top:calc(100vh + 100vh + 110vh);
-    }
-}
-
-
-@media (max-width:375px){
-    #fale-conosco{
-        margin-top:calc(100vh + 100vh + 100vh);
-    }
-}
-
-@media (max-width:320px){
-    #fale-conosco{
-        margin-top:calc(100vh + 100vh + 65vh);
     }
 }

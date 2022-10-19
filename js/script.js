@@ -4,7 +4,6 @@ class Eterna{
       //this.redirecionamento();
       this.abertura();
       this.menu();
-      this.slide();
       this.scroll();
       this.arrow();
       this.abrirWhats();
@@ -14,8 +13,10 @@ class Eterna{
     abertura(){
       setTimeout(()=>{
          document.getElementById('primeiraTela').style.display = 'none';
+         document.getElementById('main').style.display = 'block';
          document.getElementById("wrapper-arrow").style.display = 'block';
-       }, 5000);
+         this.slide();
+       }, 100);
     }
    
 
