@@ -37,13 +37,13 @@ body{
     z-index: 1;
 }
 
-#img-principal {    
+#img-principal{    
     background-image: url("../img/casa.png");
     background-repeat: no-repeat, repeat;
     background-color: #cccccc;
     background-size: cover;
-    position:relative;
-    z-index: 99;
+    position:absolute;
+    z-index: 88;
     transition: all 1s;
 }
 
@@ -107,10 +107,9 @@ header span{
     color:rgb(219, 218, 218);
 }
 
-main{
+#main{
     width: 100%;
     z-index: 10;
-    display:none;
 }
 
 

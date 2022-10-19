@@ -1,22 +1,21 @@
 
 class Eterna{
     go(){
-      this.redi()
-      this.abertura()
-      this.menu()
-      this.slide()
-      this.scroll()
-      this.arrow()
-      this.abrirWhats()
+      //this.redirecionamento();
+      this.abertura();
+      this.menu();
+      this.slide();
+      this.scroll();
+      this.arrow();
+      this.abrirWhats();
     };
 
 
     abertura(){
-      setInterval(()=>{
+      setTimeout(()=>{
          document.getElementById('primeiraTela').style.display = 'none';
-         document.getElementById('main').style.display = 'block';
          document.getElementById("wrapper-arrow").style.display = 'block';
-       }, 2500);
+       }, 5000);
     }
    
 
@@ -184,19 +183,20 @@ scroll(){
       });
     }  
 
-
-    redi(){
-      let httpLocal = 'http://127.0.0.1:5500/';
-      let http = 'http://eternaconstrutora.epizy.com';  
-      let https = 'https://eternaconstrutora.epizy.com';
-      let body = document.createElement("body");
-
-     
-     
-      if(window.location == http){
-        window.location = https;
+    /*
+      redirecionamento(){
+        let httpLocal = 'http://127.0.0.1:5500/';
+        let http = 'http://eternaconstrutora.epizy.com';  
+        let https = 'https://eternaconstrutora.epizy.com';
+        let git = 'https://leonardomaiaarruda.github.io/eternaconstrutora/';
+      
+      
+        if(window.location == httpLocal){
+          window.location = git;
+        }
       }
-  }
+     */
+    
 };
 
 

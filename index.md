@@ -20,7 +20,7 @@
 </head>
 <body>
 
-    <section id="init-start">
+    <section id="primeiraTela">
         <div id="center">
             <h2>Seja bem vindo a Construtora <span>ƎTERNA</span></h2>
             <p>Nosso proposito é fazer seu sonho da casa própria se tornar realidade</p>
