@@ -5,13 +5,14 @@ class Eterna{
       this.abertura();
       this.menu();
       this.arrow();
+      window.scrollY = false;
     };
 
 
     abertura(){
       setTimeout(()=>{
          document.getElementById('primeiraTela').style.display = 'none';
-         document.getElementById('main').style.display = 'block';
+         document.getElementById('main').style.display = 'none';
          document.getElementById("wrapper-arrow").style.display = 'block';
          this.slide();
          this.scroll();
