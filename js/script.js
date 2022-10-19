@@ -4,9 +4,7 @@ class Eterna{
       //this.redirecionamento();
       this.abertura();
       this.menu();
-      this.scroll();
       this.arrow();
-      this.abrirWhats();
     };
 
 
@@ -16,7 +14,9 @@ class Eterna{
          document.getElementById('main').style.display = 'block';
          document.getElementById("wrapper-arrow").style.display = 'block';
          this.slide();
-       }, 100);
+         this.scroll();
+         this.abrirWhats();
+       }, 3000);
     }
    
 
